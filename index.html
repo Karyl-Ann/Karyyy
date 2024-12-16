@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="loginpagedesign.css">
+    <title>Login Page</title>
+</head>
+<div class="bgblr"></div>
+<body>
+    <div class="background"></div>
+    <div class="container">
+        <h2>Login</h2>
+        <form>
+            <input type="email" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit" onclick="func()">Login</button>
+        </form>
+    </div>
+</body>
+
+<script>
+     function func()
+        {
+        var email = document.getElementById("username").value;
+        var pass = document.getElementById('password').value;
+        if(email == 'karylann' && pass == 'karyl123'){
+            alert("succcessfull!")
+            window.location.assign("Homepage.html")
+        }
+        else{
+            alert("Wrong entry invalid")
+        }
+        }
+</script>
+</html>
